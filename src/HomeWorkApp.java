@@ -21,46 +21,73 @@ public class HomeWorkApp {
     static void checkSumSign() {
         int a = (int) (Math.random() * 10 - 5);     // от 0 до 10, "-5" -> некоторые будут отрицательные
         int b = (int) (Math.random() * 10 - 5);
-        if ((a + b) >= 0) System.out.printf("\n%d and %d, the sum is positive\n", a, b);
-        else System.out.printf("\n%d and %d, the sum is negative\n", a, b);
+        if ((a + b) >= 0) {
+            System.out.printf("\n%d and %d, the sum is positive\n", a, b);
+        }
+        else {
+            System.out.printf("\n%d and %d, the sum is negative\n", a, b);
+        }
     }
 
     static void printColor() {
         int value = (int) (Math.random() * 400 - 200);
         System.out.printf("\nvalue = %d\n", value);
-        if (value <= 0) System.out.println("Red");
-        else if (value <= 100) System.out.println("Yellow");
-        else System.out.println("Green");
+        if (value <= 0) {
+            System.out.println("Red");
+        } else if (value <= 100) {
+            System.out.println("Yellow");
+        }
+        else {
+            System.out.println("Green");
+        }
     }
 
     static void compareNumbers() {
         int a = (int) (Math.random() * 10);
         int b = (int) (Math.random() * 10);
         System.out.printf("\na = %d b = %d\n", a, b);
-        if (a >= b) System.out.println("a >= b");
-        else System.out.println("a < b");
+        if (a >= b) {
+            System.out.println("a >= b");
+        }
+        else {
+            System.out.println("a < b");
+        }
     }
 
     static boolean checkNumbers(int a, int b) {
         System.out.printf("\na = %d b = %d\n", a, b);
-        if ((a + b) >= 10 & (a + b) <= 20) return true;
-        else return false;
+        if ((a + b) >= 10 & (a + b) <= 20) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     static void checkNumberPrint(int a) {
         System.out.printf("\na = %d \n", a);
-        if (a >= 0) System.out.println("The number is positive");
-        else System.out.println("The number is negative");
+        if (a >= 0) {
+            System.out.println("The number is positive");
+        }
+        else {
+            System.out.println("The number is negative");
+        }
     }
 
     static boolean checkNumberReturn(int a) {
         System.out.printf("\na = %d \n", a);
-        if (a < 0) return true;
-        else return false;
+        if (a < 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     static void printStrings(int a, String s) {
-        for (int i = 0; i < a; i++) System.out.println(s);
+        for (int i = 0; i < a; i++) {
+            System.out.println(s);
+        }
     }
 
     static boolean leapYear(int year) {
@@ -71,7 +98,11 @@ public class HomeWorkApp {
 
         System.out.println("check 2: " + Year.isLeap(year));
 
-        if ((year % 400 == 0) || ((year % 4 == 0) & (year % 100 != 0))) return true;
-        else return false;
+        if ((year % 400 == 0) || ((year % 4 == 0) & (year % 100 != 0))) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
